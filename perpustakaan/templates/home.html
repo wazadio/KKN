@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Home</h1>
+      <p>Website pengelolaan data penduduk desa Koto Renah</p>
+      <a href="/buku/" class="btn btn-primary">DATA</a>
+    </div>
+    <img src="../static/images/koren.png" alt="">
+  </div>
+</div>
+{%else%}
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Home</h1>
+      <p>Website pengelolaan data penduduk desa Koto Renah</p>
+      <a href="/auth/masuk/" class="btn btn-primary">MASUK</a>
+    </div>
+    <img src="../static/images/kknkoren.png" alt="">
+  </div>
+</div>
+{%endif%}
+
+{% endblock %}

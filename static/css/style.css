@@ -1,0 +1,16 @@
+body {
+  background-color: #ffffff;
+}
+
+.jumbotron {
+  background: url('../images/perpus.jpg') no-repeat top center fixed;
+}
+
+.home1 {
+  background: url('../images/kknkoren.png');
+  background-size: 100%;
+}
+
+.home2 {
+  background: url('../images/koren.png');
+}
